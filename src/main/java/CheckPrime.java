@@ -1,42 +1,51 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CheckPrime {
     public static void main(String[] args) {
 
-        System.out.println("Enter the number to check: ");
         Scanner scanner = new Scanner(System.in);
-        int checkedNumber = scanner.nextInt();
+        int number;
+        ArrayList dividers = new ArrayList();
+        boolean isPrimeNumber;
 
-        int i, m, flag = 0;
+        while (true) {
+            isPrimeNumber = false;
+            dividers.clear();
 
-        m = checkedNumber / 2;
+            System.out.println("Enter the number to check: ");
+            number = scanner.nextInt();
 
-        if (checkedNumber == 0 || checkedNumber == 1) {
-            System.out.println(checkedNumber + " is not prime number");
+            if (number < 2) {
+                System.out.println(number + " is not prime number");
+                System.out.println();
+                continue;
+            } else {
+                for (Integer i = 2; i <= number; i++) {
+                    if (number % i == 0) {
+                        dividers.add(i);
+                    }
+                }
 
-        } else {
-
-            for (i = 2; i <= m; i++) {
-
-                if (checkedNumber % i == 0) {
-
-                    System.out.println(checkedNumber + " is not prime number");
-                    flag = 1;
-                    break;
+                if (dividers.size() == 1) {
+                    isPrimeNumber = true;
                 }
             }
 
-            if (flag == 0) {
-                System.out.println(checkedNumber + " is prime number");
+            if (isPrimeNumber) {
+                System.out.println(number + " is prime number");
+                System.out.println();
+            } else {
+                System.out.println(number + " is not prime number");
+                System.out.println("It's dividers are:");
+                for (int i = 0; i < dividers.size() - 1; i++) {
+                    System.out.println(dividers.get(i));
+                }
+                System.out.println();
             }
-        }//end of else
+        }
     }
 }
-
-
-
-
-
 
 /*
 Написать метод который проверяет число простое или нет. Если нет вывести все его делители.
