@@ -8,11 +8,9 @@ public class DateStringConversion {
 
         System.out.println("Enter the date and time in the format 22.01.2019 19:15:00");
 
-        while (true) {
-            Scanner scanner = new Scanner(System.in);
-            String line = scanner.nextLine().trim();
-            System.out.println(dateFormatting(line));
-        }
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine().trim();
+        System.out.println(dateFormatting(line));
     }
 
     private static String dateFormatting(String inputString) {
@@ -25,11 +23,10 @@ public class DateStringConversion {
         } catch (ParseException e) {
             return "Incorrect input, try again!";
         }
-        SimpleDateFormat outFormat = new SimpleDateFormat("dd MMM, K:mm a");
+        SimpleDateFormat outFormat = new SimpleDateFormat("d MMM, K:mm a");
 
         return outFormat.format(parsingDate);
     }
-
 }
 
 /*
