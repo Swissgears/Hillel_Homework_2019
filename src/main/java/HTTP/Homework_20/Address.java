@@ -1,5 +1,6 @@
+package HTTP.Homework_20;
 
-    public class Address {
+public class Address {
         private String street;
         private String suite;
         private String city;

@@ -1,5 +1,9 @@
+package HTTP.Homework_20;
 
-    public class User {
+import HTTP.Homework_20.Address;
+import HTTP.Homework_20.Company;
+
+public class User {
         private Integer id;
         private String name;
         private String username;

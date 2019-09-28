@@ -1,5 +1,6 @@
+package HTTP.Homework_20;
 
-    public class Geo {
+public class Geo {
         private String lat;
         private String lng;
 

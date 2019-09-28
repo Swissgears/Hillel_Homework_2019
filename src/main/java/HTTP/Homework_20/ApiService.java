@@ -1,3 +1,4 @@
+package HTTP.Homework_20;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,6 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import HTTP.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.ByteStreams;

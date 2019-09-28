@@ -1,9 +1,9 @@
+package HTTP.Homework_20;
 
-    public class Todo {
+public class Album {
         private Integer userId;
         private Integer id;
         private String title;
-        private Boolean completed;
 
         public Integer getUserId() {
             return userId;
@@ -29,19 +29,10 @@
             this.title = title;
         }
 
-        public Boolean getCompleted() {
-            return completed;
-        }
-
-        public void setCompleted(Boolean completed) {
-            this.completed = completed;
-        }
-
         @Override
         public String toString() {
             return "userId = " + userId + "\n" +
                     "id = " + id + "\n" +
-                    "title = " + title + "\n" +
-                    "completed = " + completed + "\n" + "\n";
+                    "title = " + title + "\n" + "\n";
         }
     }

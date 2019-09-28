@@ -1,5 +1,6 @@
+package HTTP.Homework_20;
 
-    public class Post {
+public class Post {
         private Integer userId;
         private Integer id;
         private String title;

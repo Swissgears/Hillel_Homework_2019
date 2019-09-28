@@ -1,5 +1,6 @@
+package HTTP.Homework_20;
 
-    public class Company {
+public class Company {
         private String name;
         private String catchPhrase;
         private String bs;

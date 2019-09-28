@@ -1,3 +1,6 @@
+package HTTP.Homework_20;
+
+import HTTP.User1;
 
 import java.util.List;
 
@@ -33,13 +36,13 @@ import java.util.List;
 
 //    РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ MyApiService СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РїР°С‚С‚РµСЂРЅР° СЃРёРЅРіР»С‚РѕРЅ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє API:
 //
-//        (РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ СЃРѕР·РґР°С‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РјРѕРґРµР»Рё List, Post, User1...)
+//        (РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ СЃРѕР·РґР°С‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РјРѕРґРµР»Рё List, HTTP.Homework_20.Post, HTTP.User1...)
 //
 //        РџСЂРёРјРµСЂ:
 //
-//        ApiService service = ApiService.getInstance();
+//        HTTP.Homework_20.ApiService service = HTTP.Homework_20.ApiService.getInstance();
 //
-//        List<Post> posts = service.getPosts();
+//        List<HTTP.Homework_20.Post> posts = service.getPosts();
 //
 //        Р”Р»СЏ СЃР»РµРґСѓСЋС‰РёС… Р·Р°РїСЂРѕСЃРѕРІ:
 //

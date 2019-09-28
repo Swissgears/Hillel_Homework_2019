@@ -1,5 +1,6 @@
+package HTTP.Homework_20;
 
-    public class Photo {
+public class Photo {
         private Integer albumId;
         private Integer id;
         private String title;
